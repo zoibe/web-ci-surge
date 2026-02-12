@@ -2,10 +2,67 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera CI con Surge</title>
+    <title>CI/CD con GitHub Actions y Surge</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px 50px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #dce6ff;
+        }
+
+        p {
+            margin-top: 25px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #cfd8ff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola mundo </h1>
-    <p>Este sitio se desplegará automáticamente con GitHub Actions.</p>
+
+    <div class="card">
+        <h1>Hola mundo </h1>
+        <h2>Zoibe Mesa González</h2>
+
+        <p>
+            Este sitio se despliega automáticamente usando<br>
+            <strong>GitHub Actions</strong> y <strong>Surge.sh</strong>.
+        </p>
+
+        <footer>
+            Integración Continua (CI/CD)
+        </footer>
+    </div>
+
 </body>
 </html>
