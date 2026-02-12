@@ -17,5 +17,6 @@ jobs:
         run: npm install -g surge
 
       - name: Deploy to Surge
-        run: run: surge ./ web-ci-surge-zoibe-ci.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: run: surge ./ web-ci-surge-zoibe.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
 
