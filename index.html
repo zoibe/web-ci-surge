@@ -1,67 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CI/CD con GitHub Actions y Surge</title>
+    <title>CI/CD con GitHub Actions</title>
+
+    <!-- Fuente elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #ffffff;
         }
 
         .card {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 40px 50px;
-            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(14px);
+            padding: 50px 60px;
+            border-radius: 18px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1.2s ease;
+            max-width: 420px;
         }
 
         h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
             margin-bottom: 10px;
-            font-size: 2.5rem;
         }
 
         h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
             margin-top: 0;
-            font-weight: normal;
-            font-size: 1.4rem;
-            color: #dce6ff;
+            color: #d9e6ff;
         }
 
         p {
-            margin-top: 25px;
-            font-size: 1.1rem;
-            line-height: 1.6;
+            margin-top: 30px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #f1f5ff;
         }
 
-        footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #cfd8ff;
+        .badge {
+            margin-top: 35px;
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.18);
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>Hola mundo </h1>
+        <h1>Hola mundo</h1>
         <h2>Zoibe Mesa González</h2>
 
         <p>
-            Este sitio se despliega automáticamente usando<br>
-            <strong>GitHub Actions</strong> y <strong>Surge.sh</strong>.
+            Este sitio web se despliega automáticamente utilizando
+            <strong>GitHub Actions</strong> como pipeline de Integración Continua
+            y <strong>Surge.sh</strong> como plataforma de hosting.
         </p>
 
-        <footer>
-            Integración Continua (CI/CD)
-        </footer>
+        <div class="badge">
+            CI / CD • DevOps • Automatización
+        </div>
     </div>
 
 </body>
